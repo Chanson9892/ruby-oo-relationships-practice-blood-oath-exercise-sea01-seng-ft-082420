@@ -49,51 +49,53 @@ Questions you should ask yourself:
 * Should I write any other methods?
 * Am I following _Single Source of Truth_?
 
+ruby tools/console.rb
+
 **`Cult`**
 
-* `Cult#name`
+* [x]`Cult#name`
   * returns a `String` that is the cult's name
-* `Cult#location`
+* [x]`Cult#location`
   * returns a `String` that is the city where the cult is located
-* `Cult#founding_year`
+* [x]`Cult#founding_year`
   * returns an `Integer` that is the year the cult was founded
-* `Cult#slogan`
+* [x]`Cult#slogan`
   * returns a `String` that is this cult's slogan
-* `Cult#recruit_follower`
+* [x]`Cult#recruit_follower`
   * takes in an argument of a `Follower` instance and adds them to this cult's list of followers
-* `Cult#cult_population`
+* []`Cult#cult_population`
   * returns an `Integer` that is the number of followers in this cult
-* `Cult.all`
+* [x]`Cult.all`
   * returns an `Array` of all the cults
-* `Cult.find_by_name`
+* [x]`Cult.find_by_name`
   * takes a `String` argument that is a name and returns a `Cult` instance whose name matches that argument
-* `Cult.find_by_location`
+* [x]`Cult.find_by_location`
   * takes a `String` argument that is a location and returns an `Array` of cults that are in that location
-* `Cult.find_by_founding_year`
+* [x]`Cult.find_by_founding_year`
   * takes an `Integer` argument that is a year and returns all of the cults founded in that year
 
 **`Follower`**
 
-* `Follower#name`
+* [x]`Follower#name`
   * returns a `String` that is the follower's name
-* `Follower#age`
+* [x]`Follower#age`
   * returns an `Integer` that is the age of the follower
-* `Follower#life_motto`
+* [x]`Follower#life_motto`
   * returns a `String` that is the follower's life motto
-* `Follower#cults`
+* [x]`Follower#cults`
   * returns an `Array` of this follower's cults
-* `Follower#join_cult`
+* [x]`Follower#join_cult`
   * takes in an argument of a `Cult` instance and adds this follower to the cult's list of followers
-* `Follower.all`
+* [x]`Follower.all`
   * returns an `Array` of all the followers
-* `Follower.of_a_certain_age`
+* [x]`Follower.of_a_certain_age`
   * takes an `Integer` argument that is an age and returns an `Array` of followers who are the given age or older
 
 **`BloodOath`**
 
-* `BloodOath#initiation_date`
+* [x]`BloodOath#initiation_date`
   * returns a `String` that is the initiation date of this blood oath in the format _YYYY-MM-DD_.
-* `BloodOath.all`
+* [x]`BloodOath.all`
   * returns an `Array` of all the blood oaths
 
 ---
@@ -106,27 +108,27 @@ Now we want to build out some useful features so `Cult`s and `Follower`s and get
 
 **`Cult`**
 
-* `Cult#average_age`
+* [x]`Cult#average_age`
   * returns a `Float` that is the average age of this cult's followers
-* `Cult#my_followers_mottos`
+* [x]`Cult#my_followers_mottos`
   * prints out all of the mottos for this cult's followers
-* `Cult.least_popular`
+* [x]`Cult.least_popular`
   * returns the `Cult` instance who has the least number of followers :(
-* `Cult.most_common_location`
+* [x]`Cult.most_common_location`
   * returns a `String` that is the location with the most cults
 
 **`Follower`**
 
-* `Follower#my_cults_slogans`
+* [x]`Follower#my_cults_slogans`
   * prints out all of the slogans for this follower's cults
-* `Follower.most_active`
+* [x]`Follower.most_active`
   * returns the `Follower` instance who has joined the most cults
-* `Follower.top_ten`
+* [x]`Follower.top_ten`
   * returns an `Array` of followers; they are the ten most active followers
 
 **`BloodOath`**
 
-* `BloodOath.first_oath`
+* [x]`BloodOath.first_oath`
   * returns the `Follower` instance for the follower that made the very first blood oath
 
 ---
